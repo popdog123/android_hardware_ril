@@ -50,7 +50,3 @@ void ril_event_del(struct ril_event * ev);
 // Event loop
 void ril_event_loop();
 
-void* ril_timer_list();
-
-void ril_timer_delete(struct ril_event * ev);
-

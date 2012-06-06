@@ -312,19 +312,6 @@ void ril_timer_add(struct ril_event * ev, struct timeval * tv)
     dlog("~~~~ -ril_timer_add ~~~~");
 }
 
-// Remove event from timer list
-void ril_timer_delete(struct ril_event *tev)
-{
-    dlog("~~~~timer event delete=%x",(unsigned int)tev);
-    removeFromList(tev);
-}
-
-// sends timer callback event pointer
-void* ril_timer_list()
-{
-    return &timer_list;
-}
-
 // Remove event from watch or timer list
 void ril_event_del(struct ril_event * ev)
 {

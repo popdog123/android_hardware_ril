@@ -84,14 +84,7 @@ endif
 # =======================================================
 include $(CLEAR_VARS)
 
-# Directories of source files
-src_java=src/java
-src_generated=src/generated
-
-# Directories of generated source files
-gen_src_java=$(src_generated)/java
-
-LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_TAGS := debug
 LOCAL_MODULE := librilproto-java
 
 LOCAL_STATIC_JAVA_LIBRARIES := libprotobuf-java-2.3.0-micro
